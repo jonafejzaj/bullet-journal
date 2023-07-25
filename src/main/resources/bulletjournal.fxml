@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane prefHeight="614.0" prefWidth="915.0">
+      <children>
+         <Label fx:id="weekLabel" alignment="CENTER" layoutX="20.0" layoutY="8.0" text="This Week">
+            <font>
+               <Font name="Andale Mono" size="28.0" />
+            </font>
+         </Label>
+         <Label fx:id="weekCategory" layoutX="195.0" layoutY="19.0" prefHeight="17.0" prefWidth="137.0">
+            <font>
+               <Font name="Andale Mono" size="13.0" />
+            </font></Label>
+         <HBox layoutX="11.0" layoutY="55.0" prefHeight="342.0" prefWidth="638.0" style="-fx-background-color: #EAE8EB;">
+            <children>
+               <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="SUNDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="sundayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="sundayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="MONDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="mondayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="mondayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="TUESDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="tuesdayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="tuesdayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="110.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="WEDNESDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="wednesdayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="wednesdayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="210.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="THURSDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="thursdayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="thursdayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="310.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="FRIDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="fridayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="fridayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+               <GridPane layoutX="310.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="79.0" style="-fx-background-color: #b7b7a4;" text="SATURDAY" textAlignment="CENTER" underline="true" />
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Events:" />
+                           <ListView fx:id="saturdayEvent" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Label text="Tasks:" />
+                           <ListView fx:id="saturdayTask" prefHeight="200.0" prefWidth="200.0" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+               </GridPane>
+            </children>
+         </HBox>
+         <VBox layoutX="652.0" layoutY="54.0" prefHeight="344.0" prefWidth="152.0" style="-fx-background-color: #D4B2A7;">
+            <children>
+               <Label alignment="CENTER" prefHeight="19.0" prefWidth="173.0" style="-fx-background-color: white; -fx-border-color: black;" text="THIS WEEK'S TASKS" textAlignment="CENTER">
+                  <font>
+                     <Font name="Andale Mono" size="14.0" />
+                  </font>
+               </Label>
+               <ListView fx:id="weekTasks" prefHeight="341.0" prefWidth="147.0" style="-fx-background-color: white;">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </ListView>
+            </children>
+         </VBox>
+         <HBox fx:id="bottom" layoutX="14.0" layoutY="408.0" prefHeight="196.0" prefWidth="635.0" style="-fx-background-color: #cad2c5;">
+            <children>
+               <VBox fx:id="quotesVBox" prefHeight="196.0" prefWidth="317.5" spacing="10.0">
+                  <children>
+                     <Label text="Quotes &amp; More">
+                        <font>
+                           <Font name="Andale Mono" size="19.0" />
+                        </font>
+                        <padding>
+                           <Insets top="5.0" />
+                        </padding>
+                     </Label>
+                     <TextField fx:id="enterQuote" alignment="TOP_LEFT" prefHeight="38.0" prefWidth="298.0" promptText="Enter a quote or note!">
+                        <padding>
+                           <Insets left="10.0" top="10.0" />
+                        </padding>
+                     </TextField>
+                     <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                        <buttons>
+                           <Button fx:id="saveQuote" mnemonicParsing="false" text="Save Quote">
+                              <font>
+                                 <Font name="Andale Mono" size="13.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="clear" mnemonicParsing="false" text="Clear">
+                              <font>
+                                 <Font name="Andale Mono" size="13.0" />
+                              </font>
+                           </Button>
+                        </buttons>
+                     </ButtonBar>
+                     <Label fx:id="savedQuote" prefHeight="17.0" prefWidth="321.0" />
+                  </children>
+                  <padding>
+                     <Insets left="10.0" right="10.0" />
+                  </padding>
+               </VBox>
+               <VBox prefHeight="196.0" prefWidth="317.5" spacing="10.0">
+                  <children>
+                     <Label text="Weekly Statistics">
+                        <font>
+                           <Font name="Andale Mono" size="19.0" />
+                        </font>
+                        <padding>
+                           <Insets top="5.0" />
+                        </padding>
+                     </Label>
+                     <GridPane prefHeight="148.0" prefWidth="298.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="159.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="139.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <Label fx:id="events" text="Total Events:">
+                              <padding>
+                                 <Insets left="5.0" />
+                              </padding>
+                              <font>
+                                 <Font name="Andale Mono" size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="totalEvents" GridPane.columnIndex="1" />
+                           <Label fx:id="tasks" text="Total Tasks: " GridPane.rowIndex="1">
+                              <opaqueInsets>
+                                 <Insets left="5.0" />
+                              </opaqueInsets>
+                              <padding>
+                                 <Insets left="5.0" />
+                              </padding>
+                              <font>
+                                 <Font name="Andale Mono" size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="percentComp" text="\% tasks completed:" GridPane.rowIndex="2">
+                              <opaqueInsets>
+                                 <Insets left="5.0" />
+                              </opaqueInsets>
+                              <GridPane.margin>
+                                 <Insets left="5.0" />
+                              </GridPane.margin>
+                              <font>
+                                 <Font name="Andale Mono" size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="totalTasks" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           <Label fx:id="percentLabel" prefHeight="17.0" prefWidth="142.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        </children>
+                     </GridPane>
+                  </children>
+                  <padding>
+                     <Insets left="10.0" right="10.0" />
+                  </padding>
+               </VBox>
+            </children></HBox>
+         <VBox layoutX="650.0" layoutY="408.0" prefHeight="195.0" prefWidth="154.0" style="-fx-background-color: #A38F85#A38F85;">
+            <children>
+               <Label alignment="CENTER" prefHeight="17.0" prefWidth="183.0" style="-fx-background-color: WHITE; -fx-border-color: #6b705c;" text="COMPLETED TASKS">
+                  <font>
+                     <Font name="Andale Mono" size="15.0" />
+                  </font>
+               </Label>
+               <ListView fx:id="completeTasks" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </ListView>
+            </children>
+         </VBox>
+         <Label fx:id="errorLabel" alignment="CENTER_RIGHT" layoutX="659.0" layoutY="5.0" prefHeight="39.0" prefWidth="244.0" textFill="RED">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </Label>
+         <VBox alignment="TOP_CENTER" layoutX="808.0" layoutY="54.0" prefHeight="549.0" prefWidth="102.0" spacing="5.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="19.0" prefWidth="173.0" style="-fx-background-color: white; -fx-border-color: black;" text="MENU" textAlignment="CENTER">
+                  <font>
+                     <Font name="Andale Mono" size="14.0" />
+                  </font>
+               </Label>
+               <GridPane prefHeight="533.0" prefWidth="102.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Button fx:id="addTask" mnemonicParsing="false" prefHeight="66.0" prefWidth="146.0" style="-fx-background-color: #EBE6E5;" text="Add a task" GridPane.rowIndex="1">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="edit" mnemonicParsing="false" prefHeight="57.0" prefWidth="125.0" style="-fx-background-color: #D2C1CE;" text="Edit" GridPane.rowIndex="3">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="setAttrs" mnemonicParsing="false" prefHeight="57.0" prefWidth="148.0" style="-fx-background-color: #B4BAD4;" text="Set" GridPane.rowIndex="4">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="addEvent" mnemonicParsing="false" prefHeight="67.0" prefWidth="142.0" style="-fx-background-color: #DFD8DC;" text="Add an event" GridPane.rowIndex="2">
+                        <font>
+                           <Font name="Courier New" size="11.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="delete" mnemonicParsing="false" prefHeight="59.0" prefWidth="102.0" style="-fx-background-color: #d3ccc4;" text="Delete" GridPane.rowIndex="6">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="save" mnemonicParsing="false" prefHeight="69.0" prefWidth="153.0" style="-fx-background-color: #d4cfbd;" text="Save" GridPane.rowIndex="5">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                     <Button fx:id="markDone" mnemonicParsing="false" prefHeight="60.0" prefWidth="141.0" style="-fx-background-color: #E1CEC9;" text="Mark Done">
+                        <font>
+                           <Font name="Courier New" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </Button>
+                  </children>
+               </GridPane>
+            </children>
+         </VBox>
+      </children></AnchorPane>
+</Scene>

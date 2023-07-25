@@ -1,0 +1,4 @@
+rootProject.name = 'pa05-template'
+include 'src:main:Controller'
+findProject(':src:main:Controller')?.name = 'Controller'
+
